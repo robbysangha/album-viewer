@@ -1,0 +1,185 @@
+#album-viewer h1, #album-viewer h2 {
+	text-align: center;
+}
+
+/* The container that contains the album photo and title. */
+.albums {
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 7%;
+	height: 200px;
+	width: 250px;
+}
+
+/* img tag inside the .album. */
+.album-picture {
+	display: block;
+	margin: auto;
+	height: auto;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+	opacity: .9;
+  transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+}
+
+.albums:hover img{
+	cursor: pointer;
+  opacity: 1;
+} 
+
+.albums:hover h2{
+	color: #3E3C38;
+}
+
+/* The container that contains an entire album. */
+#album-container {
+	width: 100%;
+	margin-bottom: 3%;
+	background-color: #3E3C38;
+	color: #B9C1B5;
+}
+
+/* Style for the navigation buttons in #album-container. */
+.album-nav {
+	margin-top: 30px;
+	height: 4%;
+	width: 20px;
+	opacity: .5;
+  transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+}
+
+.album-nav:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.album-nav img {
+	height:40px;
+	width: 20px;
+}
+
+/* Left navigation button. */
+#prev-stack-box {
+	z-index: 10;
+	margin-left: 5px;
+	float: left;
+	display: none;
+}
+
+/* Right navigation button. */
+#next-stack-box {
+	z-index: 10;
+	margin-right: 5px;
+	float: right;
+	display: none;
+}
+
+/* Table containing only pictures from the album in #album-container. */
+#picture-table {
+	width: 100%;
+}
+
+/* Container containing each picture in an album. */
+td {
+	float:left;
+	height: 175px;
+	width: 225px;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+/* img tags for all the pictures in an album. */
+.picture {
+	display: block;
+	margin: auto;
+	height: auto;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.picture:hover {
+	cursor: pointer;
+}
+
+/* p tag that displays current stack number. */
+#page-num {
+	width: 2%;
+	margin-left: 49%;
+	margin-right: 49%;
+}
+
+/* Conatainer containing the full-screen picture. */
+#big-picture-container {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	display: none;
+	z-index: 20;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	padding-bottom: 2%;
+}
+
+/* Picture description in the full-screen view. */
+#pic-desc {
+	color: #FFFFFF;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+/* img tag for the picture in full-screen view. */
+#big-picture {
+	max-height: 90%;
+	max-width: 100%;
+	display: block;
+  margin: 0 auto;
+}
+
+/* Left navigation button in #big-picture-container. */
+#prev-pic-box {
+	z-index: 30;
+	margin-top: 4%;
+	margin-left: 30px;
+	float: left;
+	display: none;
+}
+
+/* Right navigation button in #big-picture-container. */
+#next-pic-box {
+	z-index: 30;
+	margin-top: 4%;
+	margin-right: 5px;
+	float: right;
+	display: none;
+}
+
+/* Closing button in #big-picture-container. */
+#close-button {
+	float: right;
+	height: 25px;
+	width: 25px;
+	margin-top: 1%;
+	margin-right: 1%;
+	opacity: .5;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+#close-button:hover {
+	cursor: pointer;
+	opacity: 1;
+}
