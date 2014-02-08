@@ -7,7 +7,7 @@ Using JQuery and Javascript.
 
 Photos taken from http://morguefile.com/archive.
 
-Instructions:
+Instructions: 
 	1. Add albums to /images/albums, be sure to rename them to numbers in the order you wish them to appear.
 	2. Rename all pictures in all the albums numerically.
 	3. Open /javascripts/pictures.js.
@@ -16,5 +16,5 @@ Instructions:
 	6. Open 'index.html' in a browser to see the changes.
 
 Notes:
-	1. Each description must be in quotation marks (""), punctuated by a comma (,) unless it is the last one in a list. 
+	1. Each description must be in quotation marks (""), punctuated by a comma (,) unless it is the last one in a list.
 	2. Changes will not be reflected unless each album folder and picture is numbered and there is a  description for each one in 'pictures.js'.
