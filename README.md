@@ -15,6 +15,6 @@ Instructions:
 	5. Add description for each picture in each album from line 36(in the correct order). Here each '[]' represents one album.
 	6. Open 'index.html' in a browser to see the changes.
 
-Note:
+Notes:
 	1. Each description must be in quotation marks (""), punctuated by a comma (,) unless it is the last one in a list. 
 	2. Changes will not be reflected unless each album folder and picture is numbered and there is a  description for each one in 'pictures.js'.
